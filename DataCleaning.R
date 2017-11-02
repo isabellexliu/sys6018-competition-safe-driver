@@ -39,8 +39,11 @@ for (i in 2:58){
 }
 
 # Create copies of the raw train and test data
-train_clean <- train
-test_clean <- test
+# As we can see from the printout from above 2 for-loops,
+# most values in "ps_car_03_cat" and "ps_car_05_cat" are missing,
+# so we get rid of the two columns when making copies.
+train_clean <- subset(train, select = -c(ps_car_03_cat, ps_car_05_cat))
+test_clean <- subset(test, select = -c(ps_car_03_cat, ps_car_05_cat))
 
 train_clean$ps_ind_02_cat[train_clean$ps_ind_02_cat == -1] <- mode(train_clean$ps_ind_02_cat)
 train_clean$ps_ind_04_cat[train_clean$ps_ind_04_cat == -1] <- mode(train_clean$ps_ind_04_cat)
