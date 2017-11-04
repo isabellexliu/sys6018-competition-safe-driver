@@ -126,6 +126,8 @@ test_clean$ps_car_09_cat <- as.factor(test_clean$ps_car_09_cat)
 test_clean$ps_car_10_cat <- as.factor(test_clean$ps_car_10_cat)
 test_clean$ps_car_11_cat <- as.factor(test_clean$ps_car_11_cat)
 
+
+
 ### Nonlinear methods ###
 
 # Smoothing splines and GAMs #
@@ -142,50 +144,50 @@ ss2$df  # 2.000001
 ss3=smooth.spline(train_clean$ps_ind_03,train_clean$target,cv=TRUE)
 ss3$df  # 12
 
-ss4=smooth.spline(train_clean$ps_ind_04_cat,train_clean$target,cv=TRUE)
-ss4$df  # Error: need at least four unique 'x' values
+#ss4=smooth.spline(train_clean$ps_ind_04_cat,train_clean$target,cv=TRUE)
+#ss4$df  # Error: need at least four unique 'x' values
 
-ss5=smooth.spline(train_clean$ps_ind_05_cat,train_clean$target,cv=TRUE)
-ss5$df  # Error: 'tol' must be strictly positive and finite
+#ss5=smooth.spline(train_clean$ps_ind_05_cat,train_clean$target,cv=TRUE)
+#ss5$df  # Error: 'tol' must be strictly positive and finite
 
-ss6=smooth.spline(train_clean$ps_ind_06_bin,train_clean$target,cv=TRUE)
-ss6$df  # Error: need at least four unique 'x' values
+#ss6=smooth.spline(train_clean$ps_ind_06_bin,train_clean$target,cv=TRUE)
+#ss6$df  # Error: need at least four unique 'x' values
 
-ss7=smooth.spline(train_clean$ps_ind_07_bin,train_clean$target,cv=TRUE)
-ss7$df  # Error: need at least four unique 'x' values
+#ss7=smooth.spline(train_clean$ps_ind_07_bin,train_clean$target,cv=TRUE)
+#ss7$df  # Error: need at least four unique 'x' values
 
-ss8=smooth.spline(train_clean$ps_ind_08_bin,train_clean$target,cv=TRUE)
-ss8$df  # Error: 'tol' must be strictly positive and finite
+#ss8=smooth.spline(train_clean$ps_ind_08_bin,train_clean$target,cv=TRUE)
+#ss8$df  # Error: 'tol' must be strictly positive and finite
 
-ss9=smooth.spline(train_clean$ps_ind_09_bin,train_clean$target,cv=TRUE)
-ss9$df  # Error: 'tol' must be strictly positive and finite
+#ss9=smooth.spline(train_clean$ps_ind_09_bin,train_clean$target,cv=TRUE)
+#ss9$df  # Error: 'tol' must be strictly positive and finite
 
-ss10=smooth.spline(train_clean$ps_ind_10_bin,train_clean$target,cv=TRUE)
-ss10$df  # Error: 'tol' must be strictly positive and finite
+#ss10=smooth.spline(train_clean$ps_ind_10_bin,train_clean$target,cv=TRUE)
+#ss10$df  # Error: 'tol' must be strictly positive and finite
 
-ss11=smooth.spline(train_clean$ps_ind_11_bin,train_clean$target,cv=TRUE)
-ss11$df  # Error: 'tol' must be strictly positive and finite
+#ss11=smooth.spline(train_clean$ps_ind_11_bin,train_clean$target,cv=TRUE)
+#ss11$df  # Error: 'tol' must be strictly positive and finite
 
-ss12=smooth.spline(train_clean$ps_ind_12_bin,train_clean$target,cv=TRUE)
-ss12$df  # Error: 'tol' must be strictly positive and finite
+#ss12=smooth.spline(train_clean$ps_ind_12_bin,train_clean$target,cv=TRUE)
+#ss12$df  # Error: 'tol' must be strictly positive and finite
 
-ss13=smooth.spline(train_clean$ps_ind_13_bin,train_clean$target,cv=TRUE)
-ss13$df  # Error: 'tol' must be strictly positive and finite
+#ss13=smooth.spline(train_clean$ps_ind_13_bin,train_clean$target,cv=TRUE)
+#ss13$df  # Error: 'tol' must be strictly positive and finite
 
-ss14=smooth.spline(train_clean$ps_ind_14,train_clean$target,cv=TRUE)
-ss14$df  # Error: 'tol' must be strictly positive and finite
+#ss14=smooth.spline(train_clean$ps_ind_14,train_clean$target,cv=TRUE)
+#ss14$df  # Error: 'tol' must be strictly positive and finite
 
 ss15=smooth.spline(train_clean$ps_ind_15,train_clean$target,cv=TRUE)
 ss15$df   # 14.00001
 
-ss16=smooth.spline(train_clean$ps_ind_16_bin,train_clean$target,cv=TRUE)
-ss16$df  # Error: need at least four unique 'x' values
+#ss16=smooth.spline(train_clean$ps_ind_16_bin,train_clean$target,cv=TRUE)
+#ss16$df  # Error: need at least four unique 'x' values
 
-ss17=smooth.spline(train_clean$ps_ind_17_bin,train_clean$target,cv=TRUE)
-ss17$df  # Error: 'tol' must be strictly positive and finite
+#ss17=smooth.spline(train_clean$ps_ind_17_bin,train_clean$target,cv=TRUE)
+#ss17$df  # Error: 'tol' must be strictly positive and finite
 
-ss18=smooth.spline(train_clean$ps_ind_18_bin,train_clean$target,cv=TRUE)
-ss18$df  # Error: 'tol' must be strictly positive and finite
+#ss18=smooth.spline(train_clean$ps_ind_18_bin,train_clean$target,cv=TRUE)
+#ss18$df  # Error: 'tol' must be strictly positive and finite
 
 ss19=smooth.spline(train_clean$ps_reg_01,train_clean$target,cv=TRUE)
 ss19$df   # 9.999988
@@ -199,26 +201,26 @@ ss21$df   # 7.441016
 ss22=smooth.spline(train_clean$ps_car_01_cat,train_clean$target,cv=TRUE)
 ss22$df   # 4.37158
 
-ss23=smooth.spline(train_clean$ps_car_02_cat,train_clean$target,cv=TRUE)
-ss23$df  # Error: 'tol' must be strictly positive and finite
+#ss23=smooth.spline(train_clean$ps_car_02_cat,train_clean$target,cv=TRUE)
+#ss23$df  # Error: 'tol' must be strictly positive and finite
 
-ss24=smooth.spline(train_clean$ps_car_04_cat,train_clean$target,cv=TRUE)
-ss24$df  # Error: 'tol' must be strictly positive and finite
+#ss24=smooth.spline(train_clean$ps_car_04_cat,train_clean$target,cv=TRUE)
+#ss24$df  # Error: 'tol' must be strictly positive and finite
 
 ss25=smooth.spline(train_clean$ps_car_06_cat,train_clean$target,cv=TRUE)
 ss25$df   # 2.000006
 
-ss26=smooth.spline(train_clean$ps_car_07_cat,train_clean$target,cv=TRUE)
-ss26$df  # Error: 'tol' must be strictly positive and finite
+#ss26=smooth.spline(train_clean$ps_car_07_cat,train_clean$target,cv=TRUE)
+#ss26$df  # Error: 'tol' must be strictly positive and finite
 
-ss27=smooth.spline(train_clean$ps_car_08_cat,train_clean$target,cv=TRUE)
-ss27$df  # Error: 'tol' must be strictly positive and finite
+#ss27=smooth.spline(train_clean$ps_car_08_cat,train_clean$target,cv=TRUE)
+#ss27$df  # Error: 'tol' must be strictly positive and finite
 
 ss28=smooth.spline(train_clean$ps_car_09_cat,train_clean$target,cv=TRUE)
 ss28$df   # 2
 
-ss29=smooth.spline(train_clean$ps_car_10_cat,train_clean$target,cv=TRUE)
-ss29$df  # Error: 'tol' must be strictly positive and finite
+#ss29=smooth.spline(train_clean$ps_car_10_cat,train_clean$target,cv=TRUE)
+#ss29$df  # Error: 'tol' must be strictly positive and finite
 
 ss30=smooth.spline(train_clean$ps_car_11_cat,train_clean$target,cv=TRUE)
 ss30$df   # 2.001177
@@ -280,24 +282,36 @@ ss48$df   # 2.000001
 ss49=smooth.spline(train_clean$ps_calc_14,train_clean$target,cv=TRUE)
 ss49$df   # 2.000005
 
-ss50=smooth.spline(train_clean$ps_calc_15_bin,train_clean$target,cv=TRUE)
-ss50$df   # Error: 'tol' must be strictly positive and finite
+#ss50=smooth.spline(train_clean$ps_calc_15_bin,train_clean$target,cv=TRUE)
+#ss50$df   # Error: 'tol' must be strictly positive and finite
 
-ss51=smooth.spline(train_clean$ps_calc_16_bin,train_clean$target,cv=TRUE)
-ss51$df   # Error: need at least four unique 'x' values
+#ss51=smooth.spline(train_clean$ps_calc_16_bin,train_clean$target,cv=TRUE)
+#ss51$df   # Error: need at least four unique 'x' values
 
-ss52=smooth.spline(train_clean$ps_calc_17_bin,train_clean$target,cv=TRUE)
-ss52$df   # Error: need at least four unique 'x' values
+#ss52=smooth.spline(train_clean$ps_calc_17_bin,train_clean$target,cv=TRUE)
+#ss52$df   # Error: need at least four unique 'x' values
 
-ss53=smooth.spline(train_clean$ps_calc_18_bin,train_clean$target,cv=TRUE)
-ss53$df   # Error: need at least four unique 'x' values
+#ss53=smooth.spline(train_clean$ps_calc_18_bin,train_clean$target,cv=TRUE)
+#ss53$df   # Error: need at least four unique 'x' values
 
-ss54=smooth.spline(train_clean$ps_calc_19_bin,train_clean$target,cv=TRUE)
-ss54$df   # Error: need at least four unique 'x' values
+#ss54=smooth.spline(train_clean$ps_calc_19_bin,train_clean$target,cv=TRUE)
+#ss54$df   # Error: need at least four unique 'x' values
 
-ss55=smooth.spline(train_clean$ps_calc_20_bin,train_clean$target,cv=TRUE)
-ss55$df   # Error: 'tol' must be strictly positive and finite
+#ss55=smooth.spline(train_clean$ps_calc_20_bin,train_clean$target,cv=TRUE)
+#ss55$df   # Error: 'tol' must be strictly positive and finite
 
+# The 55 smoothing spline commands corresponding to the 55 potential predictors give the 
+# cross-validated optimal degrees of freedom for the individual smoothing splines for each 
+# variable. These optimal degrees of freedom will be used for the quantitative variables 
+# in the following GAMs because the GAMs will include smoothing spline components for 
+# these variables. However, many of the predictors returned errors when attempting to
+# create smoothing splines with them, either because there were not enough unique values
+# (smoothing splines require at least four unique 'x' values) or because the values
+# were not strictly positive and finite. For these problematic variables, they will still
+# be included in the following GAMs, but just in their raw forms. Most of the variables
+# that returned these errors are binary or categorical variables.
+
+# GAM Model #1
 # Generate a GAM using all 55 variables, using smoothing splines with degrees of freedom from above code
 # for quantitative variables when applicable, and just including the categorical and binary variables as they are
 gam.m1=gam(target~s(ps_ind_01,2)+ps_ind_02_cat+s(ps_ind_03,12)+ps_ind_04_cat+
@@ -491,11 +505,20 @@ summary(gam.predictions)
 # Average Ginis from the 5 folds
 gam.traininggini <- (gam.traininggini+gam.traininggini2+gam.traininggini3+gam.traininggini4+gam.traininggini5) / 5
 gam.testgini <- (gam.gini+gam.gini2+gam.gini3+gam.gini4+gam.gini5) / 5
-gam.traininggin   # 0.2851756
+gam.traininggini   # 0.2851756
 gam.testgini  # 0.2676587
 
 rm(gam.m1)  # Free up memory
 
+# This first attempt at a 5-fold cross-validated GAM using all the variables seems promising, looking at
+# the resulting average Gini coefficients. The average testing Gini coefficient for this GAM was 0.2676587
+# while the average training Gini coefficient was 0.2851756. This suggests that overfitting may be
+# occurring, which is not surprising because this GAM is an extremely flexible model. So in the next
+# GAM, we try to address this by removing insignificant variables from the model.
+
+
+
+# GAM Model #2
 # Repeat the entire process above for a GAM where all insignificant variables (no stars in the Anova for
 # Parametric Effects table in the model summary) are removed
 set.seed(20)
@@ -631,7 +654,308 @@ gam.testgini  # 0.2694614
 
 rm(gam.m1)  # Free up memory
 
+# When cross-validating this GAM, every single training Gini coefficient was lower than the corresponding
+# coefficient in the previous GAM, but every single testing Gini coefficient was higher than the
+# corresponding coefficient in the previous GAM. This shows that removing the insignificant variables
+# helped to reduce the overfitting issue. The average testing Gini coefficient increased from the
+# previous GAM to 0.2694614, while the average training Gini coefficient decreased to 0.2838902.
+# The training coefficient is still quite a bit higher than the testing coefficient, so in the following
+# GAM we try to prune the model even further.
 
+
+
+# GAM Model #3
+# Repeat the entire process above for a GAM using the same variables as above, except for one
+# variable that is now insignificant in the Anova for parametric effects (i.e. removing ps_ind_14)
+set.seed(20)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=train_clean)   # GAM with smoothing splines
+summary(gam.m1)
+rm(gam.m1)  # Free up memory
+
+# Testing set = 1st fold
+trainset <- rbind(fold2,fold3,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini  # 0.281753
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03377  0.02297  0.03398  0.03645  0.04741  0.26431  
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold1)
+gam.gini <- normalized.gini.index(fold1$target, gam.predictions)
+gam.gini  # 0.2758913
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02148  0.02293  0.03403  0.03642  0.04738  0.20557 
+rm(gam.m1)  # Free up memory
+# Testing set = 2nd fold
+trainset <- rbind(fold1,fold3,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini2 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini2  # 0.283897
+summary(gam.training)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02117  0.02299  0.03411  0.03642  0.04743  0.19207
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold2)
+gam.gini2 <- normalized.gini.index(fold2$target, gam.predictions)
+gam.gini2  # 0.2705858
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.01688  0.02296  0.03414  0.03642  0.04732  0.19071
+rm(gam.m1)  # Free up memory
+# Testing set = 3rd fold
+trainset <- rbind(fold1,fold2,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini3 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini3  # 0.2867908
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03230  0.02279  0.03396  0.03629  0.04736  0.26089 
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold3)
+gam.gini3 <- normalized.gini.index(fold3$target, gam.predictions)
+gam.gini3  # 0.2580928
+summary(gam.predictions)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03788  0.02285  0.03398  0.03634  0.04743  0.20006
+rm(gam.m1)  # Free up memory
+# Testing set = 4th fold
+trainset <- rbind(fold1,fold2,fold3,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini4 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini4  # 0.2859676
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02083  0.02294  0.03428  0.03662  0.04787  0.28127
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold4)
+gam.gini4 <- normalized.gini.index(fold4$target, gam.predictions)
+gam.gini4  # 0.2624213
+summary(gam.predictions)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02333  0.02293  0.03425  0.03660  0.04781  0.23641
+rm(gam.m1)  # Free up memory
+# Testing set = 5th fold
+trainset <- rbind(fold1,fold2,fold3,fold4)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini5 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini5  # 0.2809992
+summary(gam.training)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02986  0.02323  0.03421  0.03646  0.04730  0.29390 
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold5)
+gam.gini5 <- normalized.gini.index(fold5$target, gam.predictions)
+gam.gini5  # 0.2805207
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02293  0.02324  0.03414  0.03645  0.04727  0.23312
+
+# Average Ginis from the 5 folds
+gam.traininggini <- (gam.traininggini+gam.traininggini2+gam.traininggini3+gam.traininggini4+gam.traininggini5) / 5
+gam.testgini <- (gam.gini+gam.gini2+gam.gini3+gam.gini4+gam.gini5) / 5
+gam.traininggini   # 0.2838815
+gam.testgini  # 0.2695024
+
+rm(gam.m1)  # Free up memory
+
+# This GAM has a very marginal improvement over the previous GAM as a result of removing one
+# variable. The average testing Gini coefficient improved from 0.2694614 to 0.2695024, while
+# the average training Gini coefficient decreased from 0.2838902 to 0.2838815. Currently this
+# is the best performing model, but we want to see if we can adjust the GAM a little bit
+# more to squeeze another minor improvement in its performance.
+
+
+
+# GAM Model #4
+# Repeat the entire process above for a GAM using the same variables as above, except now
+# replace the variable s(ps_reg_02,2) with just its basic form ps_reg_02, because in the
+# prior GAM Anova for nonparametric effects table the nonparametric effect of s(ps_reg_02,2)
+# was statistically insignificant
+set.seed(20)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=train_clean)   # GAM with smoothing splines
+summary(gam.m1)
+rm(gam.m1)  # Free up memory
+
+# Testing set = 1st fold
+trainset <- rbind(fold2,fold3,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini  # 0.2817254
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03380  0.02297  0.03398  0.03645  0.04741  0.26434  
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold1)
+gam.gini <- normalized.gini.index(fold1$target, gam.predictions)
+gam.gini  # 0.2758605
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02149  0.02293  0.03403  0.03642  0.04737  0.20562  
+rm(gam.m1)  # Free up memory
+# Testing set = 2nd fold
+trainset <- rbind(fold1,fold3,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini2 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini2  # 0.2838711
+summary(gam.training)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02118  0.02298  0.03411  0.03642  0.04743  0.19214
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold2)
+gam.gini2 <- normalized.gini.index(fold2$target, gam.predictions)
+gam.gini2  # 0.2705513
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.01684  0.02296  0.03414  0.03642  0.04732  0.19072 
+rm(gam.m1)  # Free up memory
+# Testing set = 3rd fold
+trainset <- rbind(fold1,fold2,fold4,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini3 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini3  # 0.2867537
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03231  0.02279  0.03396  0.03629  0.04737  0.26087 
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold3)
+gam.gini3 <- normalized.gini.index(fold3$target, gam.predictions)
+gam.gini3  # 0.258078
+summary(gam.predictions)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.03789  0.02285  0.03399  0.03634  0.04744  0.20013 
+rm(gam.m1)  # Free up memory
+# Testing set = 4th fold
+trainset <- rbind(fold1,fold2,fold3,fold5)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini4 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini4  # 0.2858938
+summary(gam.training)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02083  0.02294  0.03427  0.03662  0.04786  0.28135
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold4)
+gam.gini4 <- normalized.gini.index(fold4$target, gam.predictions)
+gam.gini4  # 0.2624513
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02341  0.02293  0.03422  0.03660  0.04781  0.23619 
+rm(gam.m1)  # Free up memory
+# Testing set = 5th fold
+trainset <- rbind(fold1,fold2,fold3,fold4)
+gam.m1=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             ps_reg_02+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=trainset)   # GAM with smoothing splines
+# Re-predict on training set
+gam.training <- predict(gam.m1, newdata = trainset)
+gam.traininggini5 <- normalized.gini.index(trainset$target, gam.training)
+gam.traininggini5  # 0.2809792
+summary(gam.training)
+#  Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02987  0.02322  0.03421  0.03646  0.04730  0.29386
+# Use GAM to make predictions on held-out test set
+gam.predictions <- predict(gam.m1, newdata = fold5)
+gam.gini5 <- normalized.gini.index(fold5$target, gam.predictions)
+gam.gini5  # 0.2805102
+summary(gam.predictions)
+#   Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+#-0.02293  0.02323  0.03414  0.03645  0.04728  0.23314 
+
+# Average Ginis from the 5 folds
+gam.traininggini <- (gam.traininggini+gam.traininggini2+gam.traininggini3+gam.traininggini4+gam.traininggini5) / 5
+gam.testgini <- (gam.gini+gam.gini2+gam.gini3+gam.gini4+gam.gini5) / 5
+gam.traininggini   # 0.2838446
+gam.testgini  # 0.2694903
+
+rm(gam.m1)  # Free up memory
+
+# This GAM performed marginally worse than the previous one. The average testing Gini coefficient
+# decreased from 0.2695024 to 0.2694903. Also, the average training Gini coefficient decreased
+# from 0.2838815 to 0.2838446.
+
+# Based on these results from the various GAM models, we believe that GAM model #3 is the best
+# one of its class, and we move on to examining other nonlinear methods.
+
+
+
+# Boosted trees (and why no other forests were created) #
 
 # Set aside a 20% validation set from the training data to use with boosting trees
 set.seed(5)
@@ -650,7 +974,7 @@ validationset <- train_clean[valid,]
 # 
 # # Bagging and Random Forests
 # set.seed(55)
-# bag.tree <- randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=57,importance=TRUE)  # Bagging
+# bag.tree <- randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=54,importance=TRUE)  # Bagging
 # rf1=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=1,importance=TRUE)   # Random forest, m = 1 predictor
 # rf2=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=2,importance=TRUE)   # Random forest, m = 2 predictors
 # rf3=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=3,importance=TRUE)   # Random forest, m = 3 predictors
@@ -704,33 +1028,30 @@ validationset <- train_clean[valid,]
 # rf51=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=51,importance=TRUE)   # Random forest, m = 51 predictors
 # rf52=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=52,importance=TRUE)   # Random forest, m = 52 predictors
 # rf53=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=53,importance=TRUE)   # Random forest, m = 53 predictors
-# rf54=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=54,importance=TRUE)   # Random forest, m = 54 predictors
-# rf55=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=55,importance=TRUE)   # Random forest, m = 55 predictors
-# rf56=randomForest(target~.-id-ps_car_11_cat,data=trainingset,mtry=56,importance=TRUE)   # Random forest, m = 56 predictors
 
 # Boosting
+# Boost model #1
 set.seed(55)
 boost.tree=gbm(target~.-id-ps_car_11_cat,data=trainingset,distribution="bernoulli",n.trees=5000)  # Default shrinkage/lambda parameter of 0.001
 summary(boost.tree)
 #                           var      rel.inf
-# ps_car_13           ps_car_13 29.963429422
-# ps_ind_05_cat   ps_ind_05_cat 16.029823136
-# ps_ind_17_bin   ps_ind_17_bin 14.786642057
-# ps_reg_03           ps_reg_03  8.545529894
-# ps_ind_03           ps_ind_03  4.980239672
-# ps_car_01_cat   ps_car_01_cat  4.620651767
-# ps_car_03_cat   ps_car_03_cat  4.093595412
-# ps_ind_06_bin   ps_ind_06_bin  2.938558500
-# ps_ind_07_bin   ps_ind_07_bin  2.800738620
-# ps_car_06_cat   ps_car_06_cat  2.449859677
-# ps_car_09_cat   ps_car_09_cat  2.097789745
-# ps_car_04_cat   ps_car_04_cat  1.789118887
-# ps_car_07_cat   ps_car_07_cat  1.442725970
-# ps_ind_15           ps_ind_15  1.361205700
-# ps_ind_16_bin   ps_ind_16_bin  1.319131343
-# ps_reg_02           ps_reg_02  0.765218263
-# ps_reg_01           ps_reg_01  0.008954954
-# ps_ind_01           ps_ind_01  0.006786982
+# ps_car_13           ps_car_13 31.314381682
+# ps_ind_05_cat   ps_ind_05_cat 16.406249561
+# ps_ind_17_bin   ps_ind_17_bin 15.456259730
+# ps_reg_03           ps_reg_03  8.757439952
+# ps_car_01_cat   ps_car_01_cat  5.387697113
+# ps_ind_03           ps_ind_03  5.124425028
+# ps_ind_06_bin   ps_ind_06_bin  3.068154854
+# ps_ind_07_bin   ps_ind_07_bin  2.978783483
+# ps_car_06_cat   ps_car_06_cat  2.539833321
+# ps_car_09_cat   ps_car_09_cat  2.205315052
+# ps_car_04_cat   ps_car_04_cat  1.755671615
+# ps_car_07_cat   ps_car_07_cat  1.454435758
+# ps_ind_15           ps_ind_15  1.314057990
+# ps_ind_16_bin   ps_ind_16_bin  1.307024923
+# ps_reg_02           ps_reg_02  0.904717088
+# ps_reg_01           ps_reg_01  0.018569661
+# ps_ind_01           ps_ind_01  0.006983189
 # ps_ind_02_cat   ps_ind_02_cat  0.000000000
 # ps_ind_04_cat   ps_ind_04_cat  0.000000000
 # ps_ind_08_bin   ps_ind_08_bin  0.000000000
@@ -742,7 +1063,6 @@ summary(boost.tree)
 # ps_ind_14           ps_ind_14  0.000000000
 # ps_ind_18_bin   ps_ind_18_bin  0.000000000
 # ps_car_02_cat   ps_car_02_cat  0.000000000
-# ps_car_05_cat   ps_car_05_cat  0.000000000
 # ps_car_08_cat   ps_car_08_cat  0.000000000
 # ps_car_10_cat   ps_car_10_cat  0.000000000
 # ps_car_11           ps_car_11  0.000000000
@@ -773,104 +1093,134 @@ summary(boost.tree)
 # Re-predict on training set
 boost.training <- predict(boost.tree, newdata = trainingset, n.trees = 5000)
 boost.traininggini <- normalized.gini.index(trainingset$target, boost.training)
-boost.traininggini  # 0.2448071
+boost.traininggini  # 0.2423589
 boost.training <- as.data.frame(boost.training)
 summary(boost.training)
 # boost.training  
-# Min.   :-3.670  
-# 1st Qu.:-3.497  
-# Median :-3.351  
+# Min.   :-3.674  
+# 1st Qu.:-3.499  
+# Median :-3.353  
 # Mean   :-3.304  
-# 3rd Qu.:-3.148  
-# Max.   :-2.021  
+# 3rd Qu.:-3.146  
+# Max.   :-1.975  
 
 
 # Use boosted tree to make predictions on validation set
 boost.predictions <- predict(boost.tree, newdata = validationset, n.trees = 5000)
 boost.gini <- normalized.gini.index(validationset$target, boost.predictions)
-boost.gini  # 0.2480922
+boost.gini  # 0.2470356
 boost.predictions <- as.data.frame(boost.predictions)
 summary(boost.predictions)
 # boost.predictions
-# Min.   :-3.670   
-# 1st Qu.:-3.497   
-# Median :-3.351   
-# Mean   :-3.304   
-# 3rd Qu.:-3.146   
-# Max.   :-2.005   
+# Min.   :-3.674   
+# 1st Qu.:-3.499   
+# Median :-3.354   
+# Mean   :-3.305   
+# 3rd Qu.:-3.145   
+# Max.   :-1.955
 
+# In constructing the boosted trees, a 20% validation set was used, with the remaining 80% of the data
+# as the training set. The reason why a validation set was used instead of a cross-validation procedure
+# is because of computational limitations; it takes a very long time to run one boosted model, so running
+# a model 5 times is infeasible.
+
+# We attempted to build a cross-validated classification tree, bagged forests, and random forests using
+# the commented-out code above. Every time, we got an error saying R could not store a vector with
+# a size of several gigabytes. Boosted models were the only forest models that would run.
+
+# The first boosted model used all predictors except for the variable ps_car_11_cat because the forest
+# models would not accept categorical predictors with more than 53 categories, and this particular variable
+# is a categorical variable with over 100 different categories. This boosted model resulted in a Gini
+# coefficient of 0.2423589 for the training set, and a Gini coefficient of 0.2470356 for the held-out
+# validation set. These results are worse than the results for all the GAMs. In looking at the summary
+# of the boosted model, we noticed that a lot of variables seemed to be unimportant, with rel.inf values
+# of 0.000000000. So, we decided to run a trimmed-down version of the boosted model below to see if there
+# would be any performance improvements.
+
+
+# Boost model #2
 # Repeat above procedure with boosting, this time removing all 
 # predictors with a rel.inf value of 0.000000000 (unimportant variables)
 set.seed(65)
 boost.tree=gbm(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-                 ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+                 ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
                  ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
                  ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,distribution="bernoulli",n.trees=5000)  # Default shrinkage/lambda parameter of 0.001
 summary(boost.tree)
 #                         var     rel.inf
-# ps_car_13         ps_car_13 29.81943892
-# ps_ind_05_cat ps_ind_05_cat 15.86696613
-# ps_ind_17_bin ps_ind_17_bin 14.86374867
-# ps_reg_03         ps_reg_03  8.67479996
-# ps_ind_03         ps_ind_03  4.96614317
-# ps_car_01_cat ps_car_01_cat  4.65390524
-# ps_car_03_cat ps_car_03_cat  4.15121322
-# ps_ind_06_bin ps_ind_06_bin  2.86249695
-# ps_ind_07_bin ps_ind_07_bin  2.85644818
-# ps_car_06_cat ps_car_06_cat  2.50072325
-# ps_car_09_cat ps_car_09_cat  2.01197215
-# ps_car_04_cat ps_car_04_cat  1.90080283
-# ps_car_07_cat ps_car_07_cat  1.44531095
-# ps_ind_15         ps_ind_15  1.38308816
-# ps_ind_16_bin ps_ind_16_bin  1.34148918
-# ps_reg_02         ps_reg_02  0.66480683
-# ps_reg_01         ps_reg_01  0.03664622
+# ps_car_13         ps_car_13 31.18646506
+# ps_ind_05_cat ps_ind_05_cat 16.25041889
+# ps_ind_17_bin ps_ind_17_bin 15.52057459
+# ps_reg_03         ps_reg_03  8.88932514
+# ps_car_01_cat ps_car_01_cat  5.44923273
+# ps_ind_03         ps_ind_03  5.08783749
+# ps_ind_07_bin ps_ind_07_bin  3.06762302
+# ps_ind_06_bin ps_ind_06_bin  2.99806068
+# ps_car_06_cat ps_car_06_cat  2.59770946
+# ps_car_09_cat ps_car_09_cat  2.12382836
+# ps_car_04_cat ps_car_04_cat  1.89167579
+# ps_car_07_cat ps_car_07_cat  1.42637814
+# ps_ind_16_bin ps_ind_16_bin  1.35728098
+# ps_ind_15         ps_ind_15  1.30991347
+# ps_reg_02         ps_reg_02  0.80702077
+# ps_reg_01         ps_reg_01  0.03665543
 # ps_ind_01         ps_ind_01  0.00000000
 
 # Re-predict on training set
 boost.training <- predict(boost.tree, newdata = trainingset, n.trees = 5000)
 boost.traininggini <- normalized.gini.index(trainingset$target, boost.training)
-boost.traininggini  # 0.2449439
+boost.traininggini  # 0.242442
 boost.training <- as.data.frame(boost.training)
 summary(boost.training)
 # boost.training  
-# Min.   :-3.672  
-# 1st Qu.:-3.497  
-# Median :-3.349  
+# Min.   :-3.676  
+# 1st Qu.:-3.499  
+# Median :-3.352  
 # Mean   :-3.304  
-# 3rd Qu.:-3.148  
-# Max.   :-2.027  
+# 3rd Qu.:-3.145  
+# Max.   :-1.978
 # Use boosted tree to make predictions on validation set
 boost.predictions <- predict(boost.tree, newdata = validationset, n.trees = 5000)
 boost.gini <- normalized.gini.index(validationset$target, boost.predictions)
-boost.gini  # 0.2483251
+boost.gini  # 0.247282
 boost.predictions <- as.data.frame(boost.predictions)
 summary(boost.predictions)
 # boost.predictions
-# Min.   :-3.672   
-# 1st Qu.:-3.497   
-# Median :-3.350   
+# Min.   :-3.676   
+# 1st Qu.:-3.499   
+# Median :-3.352   
 # Mean   :-3.304   
-# 3rd Qu.:-3.146   
-# Max.   :-2.006   
+# 3rd Qu.:-3.144   
+# Max.   :-1.954     
 
-# # Bagging with the same set of 18 predictors
+# The boosted model with fewer variables performed marginally better than the first boosted model.
+# The training set Gini coefficient increased to 0.242442, and the validation set Gini coefficient
+# increased to 0.247282. However, both of these are still worse than the results from the GAMs.
+
+# We tried to run similar models using bagging and random forest procedures with the same reduced
+# set of 17 predictors and n.trees parameter of 5000, but again received errors that the vectors'
+# size was too big and could not be stored. So we reduced the n.trees parameter to 100, and ran the
+# code below. No errors showed up, but the process did not finish, even when left to run overnight.
+
+
+
+# # Bagging with the same set of 17 predictors
 # set.seed(75)
 # bag.tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                            ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                            ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                            ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
-#                            ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=18,importance=TRUE,ntree=100)  # Bagging
+#                            ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=17,importance=TRUE,ntree=100)  # Bagging
 # summary(bag.tree)
 # # Re-predict on training set
 # bag.training <- predict(bag.tree, newdata = trainingset)
 # bag.traininggini <- normalized.gini.index(trainingset$target, bag.training)
-# bag.traininggini  # 0.2449439
+# bag.traininggini  # 
 # bag.training <- as.data.frame(bag.training)
 # summary(bag.training)
 # # Use bagged tree to make predictions on validation set
 # bag.predictions <- predict(bag.tree, newdata = validationset)
 # bag.gini <- normalized.gini.index(validationset$target, bag.predictions)
-# bag.gini  # 0.2483251
+# bag.gini  # 
 # bag.predictions <- as.data.frame(bag.predictions)
 # summary(bag.predictions)
 # 
@@ -880,360 +1230,354 @@ summary(boost.predictions)
 # # Random Forests
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                            ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                            ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                            ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
-#                            ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=17,importance=TRUE,ntree=100)  # Random forest m = 17
+#                            ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=16,importance=TRUE,ntree=100)  # Random forest m = 17
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
-#                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=16,importance=TRUE,ntree=100)  # Random forest m = 16
+#                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=15,importance=TRUE,ntree=100)  # Random forest m = 16
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
-#                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
-#                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=15,importance=TRUE,ntree=100)  # Random forest m = 15
-# summary(tree)
-# # Re-predict on training set
-# training <- predict(tree, newdata = trainingset)
-# traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
-# training <- as.data.frame(training)
-# summary(training)
-# # Use random forest tree to make predictions on validation set
-# predictions <- predict(tree, newdata = validationset)
-# gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
-# predictions <- as.data.frame(predictions)
-# summary(predictions)
-# 
-# set.seed(75)
-# tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=14,importance=TRUE,ntree=100)  # Random forest m = 14
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=13,importance=TRUE,ntree=100)  # Random forest m = 13
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=12,importance=TRUE,ntree=100)  # Random forest m = 12
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=11,importance=TRUE,ntree=100)  # Random forest m = 11
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=10,importance=TRUE,ntree=100)  # Random forest m = 10
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=9,importance=TRUE,ntree=100)  # Random forest m = 9
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=8,importance=TRUE,ntree=100)  # Random forest m = 8
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=7,importance=TRUE,ntree=100)  # Random forest m = 7
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=6,importance=TRUE,ntree=100)  # Random forest m = 6
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=5,importance=TRUE,ntree=100)  # Random forest m = 5
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=4,importance=TRUE,ntree=100)  # Random forest m = 4
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=3,importance=TRUE,ntree=100)  # Random forest m = 3
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=2,importance=TRUE,ntree=100)  # Random forest m = 2
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 # 
 # set.seed(75)
 # tree <- randomForest(target~ps_car_13+ps_ind_05_cat+ps_ind_17_bin+ps_reg_03+ps_ind_03+
-#                        ps_car_01_cat+ps_car_03_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
+#                        ps_car_01_cat+ps_ind_06_bin+ps_ind_07_bin+ps_car_06_cat+
 #                        ps_car_09_cat+ps_car_04_cat+ps_car_07_cat+ps_ind_15+ps_ind_16_bin+
 #                        ps_reg_02+ps_reg_01+ps_ind_01,data=trainingset,mtry=1,importance=TRUE,ntree=100)  # Random forest m = 1
 # summary(tree)
 # # Re-predict on training set
 # training <- predict(tree, newdata = trainingset)
 # traininggini <- normalized.gini.index(trainingset$target, training)
-# traininggini  # 0.2449439
+# traininggini  # 
 # training <- as.data.frame(training)
 # summary(training)
 # # Use random forest tree to make predictions on validation set
 # predictions <- predict(tree, newdata = validationset)
 # gini <- normalized.gini.index(validationset$target, predictions)
-# gini  # 0.2483251
+# gini  # 
 # predictions <- as.data.frame(predictions)
 # summary(predictions)
 
 
 
+# In the end, we decided to use GAM model #3 as our primary nonlinear model to make predictions on
+# the test dataset with. This model has the highest average test Gini coefficient out of all the
+# models examined. Unfortunately, bagging, random forest, and cross-validated trees could not
+# be examined due to computational power reasons.
 
 
 
+### Submitting predictions on the cleaned test dataset ###
 
+# Re-create GAM Model #3 using the entire training dataset
+set.seed(20)
+gam.model=gam(target~s(ps_ind_01,2)+s(ps_ind_03,12)+ps_ind_04_cat+ps_ind_05_cat+
+             ps_ind_06_bin+ps_ind_07_bin+ps_ind_08_bin+ps_ind_09_bin+ps_ind_12_bin+
+             s(ps_ind_15,14)+ps_ind_16_bin+ps_ind_17_bin+s(ps_reg_01,10)+
+             s(ps_reg_02,2)+s(ps_reg_03,7)+ps_car_01_cat+ps_car_02_cat+ps_car_04_cat+
+             ps_car_06_cat+ps_car_07_cat+ps_car_08_cat+ps_car_09_cat+ps_car_11_cat+
+             s(ps_car_12,23)+s(ps_car_13,9)+s(ps_car_14,19)+s(ps_car_15,4),data=train_clean)   # GAM with smoothing splines
 
+# Make predictions of cleaned test set from GAM Model #3
+gam.testpredictions <- as.data.frame(predict(gam.model, newdata=test_clean))
+names(gam.testpredictions) <- "target"
+summary(gam.testpredictions)
+#     target        
+# Min.   :-0.02139  
+# 1st Qu.: 0.02308  
+# Median : 0.03413  
+# Mean   : 0.03646  
+# 3rd Qu.: 0.04745  
+# Max.   : 0.26232 
 
-
-
-
-
-
-
-
-
-# Make predictions of test set from boosted tree
-boost.testpredictions <- as.data.frame(predict(boost.tree, newdata=test_clean, n.trees = 5000))
-names(boost.testpredictions) <- "target"
-summary(boost.testpredictions)
-# target      
-# Min.   :-3.670  
-# 1st Qu.:-3.496  
-# Median :-3.351  
-# Mean   :-3.304  
-# 3rd Qu.:-3.147  
-# Max.   :-2.063  
-
-boost.submission <- cbind(test_clean$id, boost.testpredictions)
-names(boost.submission) <- c("id","target")
+gam.submission <- cbind(test_clean$id, gam.testpredictions)
+names(gam.submission) <- c("id","target")
 
 # Re-scale to a [0,1] scale
-boost.submission$target <- ((boost.submission$target - min(boost.submission$target)) / (max(boost.submission$target) - min(boost.submission$target)))
+gam.submission$target <- ((gam.submission$target - min(gam.submission$target)) / (max(gam.submission$target) - min(gam.submission$target)))
+
+# From the summary of the test predictions, we see that the range of the predictions goes from
+# -0.02139 to 0.26232. However, the predictions we submit must be between 0 to 1. Re-scaling our
+# predictions using the above command is appropriate in this situation because the evaluation
+# metric is the Gini coefficient, which is concerned more about the relative ordering of the
+# predictions instead of the actual prediction values, and this re-scaling procedure preserves 
+# the ordering of the predictions.
 
 # Write out predictions to a CSV file
-write.csv(boost.submission, "Boosted_Tree_Predictions.csv", row.names=FALSE)
+write.csv(gam.submission, "GAM_Predictions.csv", row.names=FALSE)
+
+# This submission file received a score of 0.267 on the public leaderboard.
